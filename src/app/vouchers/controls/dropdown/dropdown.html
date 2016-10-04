@@ -1,0 +1,9 @@
+<div class="dropdown-wrapper">
+    <div class="dropdown-title" [ngClass]="{disabled: disabled}" (click)="handleToggle()">{{topText}}</div>
+    <div *ngIf="isOpen" class="dropdown-list">
+        <div *ngFor="let item of data"
+             (click)="handleSelect(item.id)" class="dropdown-list-item">
+            {{item.text}}
+        </div>
+    </div>
+</div>
