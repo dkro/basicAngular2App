@@ -1,0 +1,22 @@
+<table>
+    <colgroup>
+        <col width="40px"/>
+        <col/>
+        <col width="80px">
+        <col width="80px"/>
+    </colgroup>
+    <thead>
+        <th>ID</th>
+        <th>Title</th>
+        <th>Type</th>
+        <th>Action</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let voucher of vouchers">
+            <td>{{voucher.id}}</td>
+            <td class="left">{{voucher.title}}</td>
+            <td><dropdown [disabled]="true" [data]="voucherTypes" [selectedById]="voucher.type"></dropdown></td>
+            <td><button (click)="handleEdit(voucher.id)">EDIT</button></td>
+        </tr>
+    </tbody>
+</table>

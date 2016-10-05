@@ -1,0 +1,15 @@
+<div class="voucher-add-wrapper">
+    <h3 *ngIf="id > -1">Voucher {{id}}</h3>
+    <h3 *ngIf="id === -1">Create New Voucher</h3>
+    <div class="voucher-form">
+        <div class="voucher-title">Title:</div>
+        <input [(ngModel)]="title" placeholder="Insert Voucher Title"/>
+        <!--TODO  [data]="voucherTypes" [selectedById]="type" (dropdownChange)="handleTypeSelect($event)"-->
+        <dropdown></dropdown>
+        <div>THE VOUCHER TYPE IS {{type}}</div>
+        <div class="add-buttons">
+            <button class="save-button" (click)="handleSave()">{{isCreate ? 'Create' : 'Save Changes'}}</button>
+            <button class="cancel-button" (click)="handleCancel()">CANCEL</button>
+        </div>
+    </div>
+</div>

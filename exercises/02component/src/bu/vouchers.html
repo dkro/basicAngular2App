@@ -1,0 +1,23 @@
+<div class="voucher-list-wrapper">
+    <h2>All Vouchers</h2>
+    <table>
+        <colgroup>
+            <col width="40px"/>
+            <col/>
+            <col width="80px"/>
+        </colgroup>
+        <thead>
+        <th>ID</th>
+        <th>Title</th>
+        <th>Action</th>
+        </thead>
+        <tbody>
+        <tr *ngFor="let voucher of vouchers">
+            <td>{{voucher.id}}</td>
+            <td class="left">{{voucher.title}}</td>
+            <td><button>EDIT</button></td>
+        </tr>
+        </tbody>
+    </table>
+    <button class="addButton" (click)="handleAddRandom()">ADD RANDOMIZED</button>
+</div>
