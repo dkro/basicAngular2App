@@ -2,3 +2,4 @@ node_modules/
 coverage/
 .idea
 exercises/*/node_modules/
+dist/
