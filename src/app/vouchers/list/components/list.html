@@ -13,7 +13,7 @@
     </thead>
     <tbody>
         <tr *ngFor="let voucher of vouchers">
-            <td>{{voucher.id}}</td>
+            <td color-switcher [color]="'#FF00FF'">{{voucher.id}}</td>
             <td class="left">{{voucher.title}}</td>
             <td><dropdown [disabled]="true" [data]="voucherTypes" [selectedById]="voucher.type"></dropdown></td>
             <td><button (click)="handleEdit(voucher.id)">EDIT</button></td>
