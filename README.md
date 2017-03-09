@@ -14,3 +14,5 @@ In the exercises folder you find the same project but unfinished where some part
 - 03 add routing to list,edit,create. Create the dropdown component with inputs and outputs
 - 04 add a service to the app with is injected in all vital parts
 - 05 add a fun color directive which changes the color of the host
+
+Best Regards
