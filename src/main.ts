@@ -9,4 +9,8 @@ if (environment.production) {
   enableProdMode();
 }
 
+// opi
+// o[wqe
+//   qw[ei]]
+
 platformBrowserDynamic().bootstrapModule(AppModule);
